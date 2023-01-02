@@ -27,7 +27,7 @@ function Navbar() {
   return (
     <nav className={`flex items-center justify-between flex-wrap p-6 fixed top-0 w-full transition ease-in duration-300 z-10  ${handle && 'bg-black'}`}>
       <div className="flex items-center flex-shrink-0 text-white left-6 object-contain">
-        <img src="https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg" className="sm:w-36 w-28 mr-5"/>
+        <img src="https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg" className="sm:w-36 w-28 mr-5" alt=""/>
         <ul className="sm:flex hidden">
           {
             list.map((val,i) => {
@@ -37,7 +37,7 @@ function Navbar() {
         </ul>
       </div>
       <div className="right-6 object-contain">
-        <img src="https://i.pinimg.com/736x/c3/7e/e2/c37ee2012b6e650656bdce0eda0e5294.jpg" className="sm:w-12 w-8"/>
+        <img src="https://i.pinimg.com/736x/c3/7e/e2/c37ee2012b6e650656bdce0eda0e5294.jpg" className="sm:w-12 w-8" alt=""/>
       </div>
     </nav>
   );

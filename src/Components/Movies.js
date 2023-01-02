@@ -73,6 +73,7 @@ function Movies({ title, url, poster }) {
               className={`w-full sm:max-h-28 max-h-20 object-contain mr-2 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer ${
                 poster && "posterLg"
               }`}
+              alt=''
               onClick={() => clickTrailer(val)}
             />
           );
@@ -87,7 +88,7 @@ function Movies({ title, url, poster }) {
         trailerUrl && <div>
           <div className="bg-gray-700 p-3 m-3 flex justify-center items-center gap-2 cursor-pointer" onClick={() => closeClick()}>
             <p className="text-white">Close Trailer</p>
-            <img src={deleteImg} className='w-4'/>
+            <img src={deleteImg} className='w-4' alt=""/>
           </div>
           <YouTube videoId={trailerUrl} opts={settings} className='pb-3'/>
         </div>

@@ -31,11 +31,11 @@ function Banner() {
                 <h1 className='text-white sm:text-5xl text-4xl font-medium'>{movie.name || movie.original_name}</h1>
                 <div className='flex gap-4'>
                     <button className="w-28 h-10 rounded-md bg-black backdrop-blur-sm bg-opacity-20 flex items-center justify-center  hover:bg-black gap-2 transition ease-in-out duration-300">
-                        <img src={imgPlay} className='w-3'/>
+                        <img src={imgPlay} className='w-3' alt=''/>
                         <p className='text-white'>Play</p>
                     </button>
                     <button className="w-28 h-10 rounded-md bg-black backdrop-blur-sm bg-opacity-20 flex items-center justify-center hover:bg-black gap-2 transition ease-in-out duration-300">
-                        <img src={imgList} className='w-3'/>
+                        <img src={imgList} className='w-3' alt=''/>
                         <p className='text-white'>My List</p>
                     </button>
                 </div>
